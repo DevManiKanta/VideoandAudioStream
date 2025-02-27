@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "y",
+    "slug": "y",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.manikantamani.y",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to your camera to record videos.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to save and share files.",
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone for video/audio recording.",
+        "NSLocationWhenInUseUsageDescription": "This app needs access to your location for specific features.",
+        "NSLocationAlwaysUsageDescription": "This app needs access to your location for specific features even when the app is in the background." 
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.manikantamani.y",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "9bee437d-0c78-4f1c-93b5-da6f21bfe5e8"
+      }
+    }
+  }
+}
