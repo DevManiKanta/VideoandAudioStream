@@ -7,7 +7,7 @@ PODS:
   - EXConstants (17.0.7):
     - ExpoModulesCore
   - EXJSONUtils (0.14.0)
-  - EXManifests (0.15.6):
+  - EXManifests (0.15.7):
     - ExpoModulesCore
   - Expo (52.0.37):
     - ExpoModulesCore
@@ -220,6 +220,8 @@ PODS:
     - Yoga
   - ExpoAsset (11.0.4):
     - ExpoModulesCore
+  - ExpoAudio (0.3.5):
+    - ExpoModulesCore
   - ExpoBlur (14.0.3):
     - ExpoModulesCore
   - ExpoFileSystem (18.0.11):
@@ -264,6 +266,8 @@ PODS:
   - ExpoSymbols (0.2.2):
     - ExpoModulesCore
   - ExpoSystemUI (4.0.8):
+    - ExpoModulesCore
+  - ExpoVideo (2.0.5):
     - ExpoModulesCore
   - ExpoWebBrowser (14.0.2):
     - ExpoModulesCore
@@ -1802,6 +1806,8 @@ PODS:
     - React-logger (= 0.76.7)
     - React-perflogger (= 0.76.7)
     - React-utils (= 0.76.7)
+  - RNCAsyncStorage (2.1.2):
+    - React-Core
   - RNGestureHandler (2.20.2):
     - DoubleConversion
     - glog
@@ -1958,6 +1964,7 @@ DEPENDENCIES:
   - expo-dev-menu (from `../node_modules/expo-dev-menu`)
   - expo-dev-menu-interface (from `../node_modules/expo-dev-menu-interface/ios`)
   - ExpoAsset (from `../node_modules/expo-asset/ios`)
+  - ExpoAudio (from `../node_modules/expo-audio/ios`)
   - ExpoBlur (from `../node_modules/expo-blur/ios`)
   - ExpoFileSystem (from `../node_modules/expo-file-system/ios`)
   - ExpoFont (from `../node_modules/expo-font/ios`)
@@ -1970,6 +1977,7 @@ DEPENDENCIES:
   - ExpoSplashScreen (from `../node_modules/expo-splash-screen/ios`)
   - ExpoSymbols (from `../node_modules/expo-symbols/ios`)
   - ExpoSystemUI (from `../node_modules/expo-system-ui/ios`)
+  - ExpoVideo (from `../node_modules/expo-video/ios`)
   - ExpoWebBrowser (from `../node_modules/expo-web-browser/ios`)
   - EXUpdatesInterface (from `../node_modules/expo-updates-interface/ios`)
   - FBLazyVector (from `../node_modules/react-native/Libraries/FBLazyVector`)
@@ -2037,6 +2045,7 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNLiveAudioStream (from `../node_modules/react-native-live-audio-stream`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
@@ -2074,6 +2083,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-dev-menu-interface/ios"
   ExpoAsset:
     :path: "../node_modules/expo-asset/ios"
+  ExpoAudio:
+    :path: "../node_modules/expo-audio/ios"
   ExpoBlur:
     :path: "../node_modules/expo-blur/ios"
   ExpoFileSystem:
@@ -2098,6 +2109,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-symbols/ios"
   ExpoSystemUI:
     :path: "../node_modules/expo-system-ui/ios"
+  ExpoVideo:
+    :path: "../node_modules/expo-video/ios"
   ExpoWebBrowser:
     :path: "../node_modules/expo-web-browser/ios"
   EXUpdatesInterface:
@@ -2229,6 +2242,8 @@ EXTERNAL SOURCES:
     :path: build/generated/ios
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNLiveAudioStream:
@@ -2250,13 +2265,14 @@ SPEC CHECKSUMS:
   EXAV: 57ea461614a714b8b8fcc72c6fbc298b8f1ec78b
   EXConstants: 0472d3c23d97943fe3505306daf9cde8024365c2
   EXJSONUtils: 01fc7492b66c234e395dcffdd5f53439c5c29c93
-  EXManifests: b1586049a30ba7ec9ca7ec9afbd4cc233c4b2316
+  EXManifests: 4e8c6aa537f44e72c2b4e2b71698234b623007da
   Expo: f1d13d22815979ad85a0a59fcf6d23660c813ecd
   expo-dev-client: be653fa8a57337215e8557c07ddced0e8c576af6
   expo-dev-launcher: c2828ac93e56a5ae0278dc86296272c90376d63d
   expo-dev-menu: c05ba94a0e32c90493005178a26ecea66e941462
   expo-dev-menu-interface: 00dc42302a72722fdecec3fa048de84a9133bcc4
   ExpoAsset: a4cbc27a7cd24a6e87eb719603790b2cfa8dd326
+  ExpoAudio: 59cfca1241442cd5f4bdc9ab1026f0452849fab0
   ExpoBlur: 567af66164e3043a9a30069594aed1ddf0a88d97
   ExpoFileSystem: 4d2e7f77a41cfde8c3ae98580d872cd49437f993
   ExpoFont: 773955186469acc5108ff569712a2d243857475f
@@ -2269,6 +2285,7 @@ SPEC CHECKSUMS:
   ExpoSplashScreen: 48a5b55b370aaf48e8be0c7846c487e583067164
   ExpoSymbols: b9f255ce49868d46a73f30e12859efeb8117bcad
   ExpoSystemUI: ba4507df7d8d15f5e1694a3c7fc6bc3cca3803e5
+  ExpoVideo: 6860956b8fc77af4e69165236af5fc037a060a02
   ExpoWebBrowser: 6890a769e6c9d83da938dceb9a03e764afc3ec9c
   EXUpdatesInterface: 1dcebac98ac5dad4289e6ff2bd5616822e894397
   FBLazyVector: ca8044c9df513671c85167838b4188791b6f37e1
@@ -2334,6 +2351,7 @@ SPEC CHECKSUMS:
   React-utils: 9f9a6a31d703b136eb1614d914c10a3c96b1e6dd
   ReactCodegen: 9a99ced51aab02909c7ab5056f33dff7054305bb
   ReactCommon: 04292c6f596181ebf755e7929d96d2148542b0e8
+  RNCAsyncStorage: addfc2cb6511dbe199c56c6b26ede383b6c38919
   RNGestureHandler: 511250b190a284388f9dd0d2e56c1df76f14cfb8
   RNLiveAudioStream: 02584d52711b6b9f268cb371a4b1bdd76ab3e079
   RNReanimated: 849c4bfc1a185b123ca9a89f2a98d679b3d79b4e

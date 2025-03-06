@@ -38,7 +38,6 @@
 //     </View>
 //   );
 // }
-
 // const styles = StyleSheet.create({
 //   contentContainer: {
 //     flex: 1,
