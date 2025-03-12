@@ -16,7 +16,9 @@
         "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to save and share files.",
         "NSMicrophoneUsageDescription": "This app needs access to your microphone for video/audio recording.",
         "NSLocationWhenInUseUsageDescription": "This app needs access to your location for specific features.",
-        "NSLocationAlwaysUsageDescription": "This app needs access to your location for specific features even when the app is in the background." 
+        "NSLocationAlwaysUsageDescription": "This app needs access to your location for specific features even when the app is in the background.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs permission to save and play audio files.",
+        "NSAppleMusicUsageDescription": "This app needs access to your media library to play audio files."
       }
     },
     "android": {

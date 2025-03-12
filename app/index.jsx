@@ -12,6 +12,7 @@ import ChartComponent from "../components/chartComponent";
 import { useRouter } from "expo-router";
 import * as FileSystem from "expo-file-system";
 import * as Sharing from "expo-sharing";
+import lamejs from "lamejs";
 // Constants for audio processing
 const bufferSize = 1024;
 const sampleRate = 44100;
@@ -157,7 +158,6 @@ const Index = () => {
       console.error("Error saving file:", error);
     }
   };
-
   // Share the saved data file
   const shareJsonFile = async (fileUri) => {
     try {
